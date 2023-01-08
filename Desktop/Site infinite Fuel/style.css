@@ -3,3 +3,147 @@ body{
     margin: 0;
     padding: 0;
 }
+
+nav{
+    width: 100%;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    box-sizing: border-box;
+    background: #EC6726;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    float: right;
+    position: absolute;
+    width: 765px;
+    height: 24px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    width: 207px;
+    height: 63px;
+    left: 50px;
+}
+
+li{
+    display: inline;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.panier_vide{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 70px;
+}
+
+nav .menuburger{
+    display: none;
+    position: absolute;
+    width: 35px;
+    top: 50px;
+    right: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+
+    /*nav .menuburger{
+        display: block;
+    }*/
+
+    .logo{
+        position: absolute;
+        width: 207px;
+        height: 63px;
+        left: 50px;
+    }
+
+    .panier_vide{
+        display: none;
+    }
+
+    ul{
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #EC6726;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    ul li{
+        margin: 50px 0;
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    background-image: url("img/fond\ accueil.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1{
+    position: absolute;
+    width: 460px;
+    height: 456px;
+    margin-top: 10%;
+    margin-left: 38%;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 57px;
+    line-height: 78px;
+    text-align: center;
+    align-items: center;
+
+    color: black;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    width: 80%;
+    left: 50px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
