@@ -13,7 +13,9 @@ nav{
     box-sizing: border-box;
     background: #EC6726;
     align-items: center;
+    /*box-shadow: 0px 5px 5px black;*/
 }
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -28,10 +30,10 @@ ul{
 }
 
 .logo{
-    position: absolute;
+    /*position: absolute;*/
+    margin-left: 50px;
     width: 207px;
     height: 63px;
-    left: 50px;
 }
 
 li{
@@ -65,6 +67,35 @@ nav .menuburger{
     top: 50px;
     right: 50px;
 }
+
+.hero{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    background-image: url("img/fond\ accueil.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1{
+    position: absolute;
+    width: 460px;
+    height: 456px;
+    margin-top: 10%;
+    margin-left: 38%;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 57px;
+    line-height: 78px;
+    text-align: center;
+    align-items: center;
+
+    color: black;
+}
+
+/*RESPONSIVE*/
 
 @media screen and (max-width: 1200px) {
     nav{
@@ -102,34 +133,401 @@ nav .menuburger{
     ul li{
         margin: 50px 0;
     }
+
+    .hero{
+        display: none;
+    }
 }
 
-.hero{
+
+
+/*PAGE PRODUITS*/
+
+.titre1{
     width: 100%;
-    height: 850px;
-    display: flex;
-    background-image: url("img/fond\ accueil.png");
-    background-position: center;
-    background-size: cover;
+    height: 200px;
 }
 
-.hero h1{
+.titrepageproduit{
     position: absolute;
-    width: 460px;
-    height: 456px;
-    margin-top: 10%;
+    width: 440px;
+    height: 60px;
+    margin-top: 5%;
     margin-left: 38%;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 57px;
-    line-height: 78px;
+    font-size: 58px;
+    line-height: 79px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+section, aside{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+section .parent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+section .parent .enfant{
+    width: 30%;
+    position: relative;
+}
+
+section .parent img{
+    width: 100%;
+}
+
+section .enfant h2{
+    bottom: 0;
+    left: 10px;
+    color: black;
+    font-size: larger;
+}
+
+section .enfant a{
+    text-decoration: none;
+}
+
+.prixcard{
+    text-align: end;
+}
+
+.produits{
+    width: 100%;
+    height: 74px;
+    background-color: #EC6726;
+    display: flex;
+    justify-content: center;
+}
+
+.produits p{
+    color: white;
     text-align: center;
     align-items: center;
-
-    color: black;
 }
+
+.garanties{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictosgaranties{
+    height: 135px;
+}
+
+/*PAGE PRODUIT 1*/
+
+.sectionproduit1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgproduit1{
+    /*position: absolute;*/
+    width: 647px;
+    height: 543px;
+    left: 163px;
+    top: 207px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ ROUGE\ FACE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vignetteproduit1{
+    position: absolute;
+    width: 91px;
+    height: 90px;
+    left: 51px;
+    top: 207px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ ROUGE\ FACE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vignetteproduit2{
+    position: absolute;
+    width: 91px;
+    height: 90px;
+    left: 51px;
+    top: 315px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ ROUGE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ficheproduit1{
+    /*position: absolute;*/
+    width: 474px;
+    height: 394px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #FBFBFB;
+    box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 30px 30px 0px;
+}
+
+.interieurficheproduit1{
+    width: 380px;
+    height: 394px;
+}
+
+.ligne1{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btnmoinsetplus{
+    width: 94px;
+    height: 33px;
+
+    background-image: url(img/btnplusetmoins.svg);
+}
+
+.ligne2{
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btnpanier{
+    width: 207px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #EC6726;
+    border-radius: 17.5px;
+}
+
+.btnpanier p{
+    color: white;
+}
+
+.italique{
+    font-style: italic;
+}
+
+.asideproduit1{
+    width: 100%;
+    height: 150px;
+    background-color: #EC6726;
+    display: flex;
+    justify-content: space-around;
+}
+
+.asideproduit1 h3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.blocaside{
+    /*height: 100px;*/
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texteaside1{
+    height: 100px;
+    display: flex;
+    /*align-items: center;*/
+    text-align: left;
+    align-items: center;
+    color: white;
+}
+
+
+.texteaside2{
+    height: 100px;
+    display: flex;
+    /*align-items: center;*/
+    text-align: left;
+    align-items: center;
+    color: white;
+}
+
+/*PAGE PRODUIT 2*/
+
+.imgproduit2{
+    /*position: absolute;*/
+    width: 647px;
+    height: 543px;
+    left: 163px;
+    top: 207px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ JAUNE\ FACE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vignetteproduit21{
+    position: absolute;
+    width: 91px;
+    height: 90px;
+    left: 51px;
+    top: 207px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ JAUNE\ FACE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vignetteproduit22{
+    position: absolute;
+    width: 91px;
+    height: 90px;
+    left: 51px;
+    top: 315px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ JAUNE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*PANIER*/  
+
+.panier{
+    width: 100%;
+    height: 767px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume{
+    width: 680px;
+    height: 325px;
+}
+
+.resume h1{
+    font-size: xx-large;
+}
+
+.blocresume{
+    width: 680px;
+    height: 256px;
+
+    background: #FBFBFB;
+    box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 30px 30px 0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgresume{
+    width: 235px;
+    height: 216px;
+
+    background: url(img/MOCKUP\ INFINITE\ FUEL\ JAUNE\ FACE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.texteresume{
+    width: 301px;
+    height: 199px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.ligne{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gras{
+    font-size: large;
+    font-weight: bold;
+}
+
+.cadrefacturation{
+    width: 500px;
+    height: 250px;
+
+    background: #FBFBFB;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facturation{
+    width: 425px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailfacturation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnpaiement{
+    width: 434px;
+    height: 58px;
+
+    background: #EC6726;
+}
+
+.paiement{
+    text-decoration: none;
+}
+
+.btnpaiement p{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    display: flex;
+    /*text-align: center;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.btnpaiement p a{
+    text-decoration: none;
+    color: white;
+}
+
+/*FOOTER*/
 
 footer{
     background-color: black;
@@ -151,4 +549,4 @@ footer p{
 footer p a{
     text-decoration: none;
     color: white;
-}
+} 
